@@ -4,4 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-top-bar',
   templateUrl: './top-bar.component.html'
 })
-export class TopBarComponent {}
+export class TopBarComponent {
+  title:string="SteamAnalyst"
+  username:string="maccyboi"
+  weapon:string="AWP"
+}
