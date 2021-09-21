@@ -7,14 +7,21 @@ import { HamburgerComponent } from './hamburger/hamburger.component';
 import { BodyComponent } from './body/body.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MarketLayoutComponent } from './market/market-component';
+import { ProfitLayoutComponent } from './profit/profit-component';
+import { LoginLayoutComponent } from './login/login-component';
+import { InspectLayoutComponent } from './inspect/inspect-component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, TopBarComponent, HamburgerComponent , BodyComponent, LayoutMainComponent, FooterComponent
+    AppComponent, TopBarComponent, HamburgerComponent , BodyComponent, LayoutMainComponent, FooterComponent, MarketLayoutComponent,
+     ProfitLayoutComponent, LoginLayoutComponent, InspectLayoutComponent
   ],
   imports: [
-    BrowserModule 
+    BrowserModule,
+    AppRoutingModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
