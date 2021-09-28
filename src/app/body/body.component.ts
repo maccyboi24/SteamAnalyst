@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { ItemCard } from "./item-card.model";
 
 @Component({
     selector: 'steam-body',
@@ -6,5 +7,5 @@ import { Component } from "@angular/core";
 })
 
 export class BodyComponent{
-
+    itemCards:ItemCard[] = [];
 }

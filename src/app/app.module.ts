@@ -12,12 +12,15 @@ import { MarketLayoutComponent } from './market/market-component';
 import { ProfitLayoutComponent } from './profit/profit-component';
 import { LoginLayoutComponent } from './login/login-component';
 import { InspectLayoutComponent } from './inspect/inspect-component';
+import { ItemCardComponent } from './body/item-card.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent, TopBarComponent, HamburgerComponent , BodyComponent, LayoutMainComponent, FooterComponent, MarketLayoutComponent,
-     ProfitLayoutComponent, LoginLayoutComponent, InspectLayoutComponent
+     ProfitLayoutComponent, LoginLayoutComponent, InspectLayoutComponent, ItemCardComponent
   ],
   imports: [
     BrowserModule,
