@@ -360,11 +360,10 @@
 
     <div class="container-fluid">
         <div class="d-flex flex-row">
-            <item-card>Loading</item-card>
-            <item-card>Loading</item-card>
-            <item-card>Loading</item-card>
-            <item-card>Loading</item-card>
-            <item-card>Loading</item-card>
+            <div *ngFor="let itemcard of itemCards;">
+                <item-card itemName={{itemcard.itemName}} fnPrice={{itemcard.fnPrice}} mwPrice={{itemcard.mwPrice}}
+                    img={{itemcard.img}}>Loading</item-card>
+            </div>
         </div>
     </div>
 
