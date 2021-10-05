@@ -13,18 +13,20 @@ import { ProfitLayoutComponent } from './profit/profit-component';
 import { LoginLayoutComponent } from './login/login-component';
 import { InspectLayoutComponent } from './inspect/inspect-component';
 import { ItemCardComponent } from './body/item-card.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './body/user-info.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent, TopBarComponent, HamburgerComponent , BodyComponent, LayoutMainComponent, FooterComponent, MarketLayoutComponent,
-     ProfitLayoutComponent, LoginLayoutComponent, InspectLayoutComponent, ItemCardComponent
+     ProfitLayoutComponent, LoginLayoutComponent, InspectLayoutComponent, ItemCardComponent, UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule 
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
