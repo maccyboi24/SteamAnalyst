@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "steamanalyst-app": {
+      "hosting": {
+        "SteamAnalyst": [
+          "steamanalyst-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "steamanalyst-app"
+  }
+}
