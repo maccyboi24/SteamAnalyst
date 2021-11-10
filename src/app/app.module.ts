@@ -15,6 +15,9 @@ import { InspectLayoutComponent } from './inspect/inspect-component';
 import { ItemCardComponent } from './body/item-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './body/user-info.component';
+import { AuthComponent } from './auth/auth.component';
+import { FormsModule } from '@angular/forms';
+
 
 //firebase config
 import { AngularFireModule } from '@angular/fire/compat';
@@ -24,10 +27,11 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent, TopBarComponent, HamburgerComponent , BodyComponent, LayoutMainComponent, FooterComponent, MarketLayoutComponent,
-     ProfitLayoutComponent, LoginLayoutComponent, InspectLayoutComponent, ItemCardComponent, UserInfoComponent
+     ProfitLayoutComponent, LoginLayoutComponent, InspectLayoutComponent, ItemCardComponent, UserInfoComponent, AuthComponent, FormsModule
   ],
   imports: [
     BrowserModule,

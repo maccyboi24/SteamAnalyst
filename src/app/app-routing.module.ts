@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from './auth/auth.component';
 import { BodyComponent } from './body/body.component';
 import { InspectLayoutComponent } from './inspect/inspect-component';
 import { LoginLayoutComponent } from './login/login-component';
@@ -11,7 +12,9 @@ const routes: Routes = [
   { path: 'market', component: MarketLayoutComponent},
   { path: 'profit', component: ProfitLayoutComponent},
   { path: 'login', component: LoginLayoutComponent},
-  { path: 'inspect', component: InspectLayoutComponent}
+  { path: 'inspect', component: InspectLayoutComponent},
+  { path: 'auth', component: AuthComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
 
 @NgModule({
